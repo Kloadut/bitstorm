@@ -1,0 +1,27 @@
+{
+  "name": "Bitstorm",
+  "description": "Super-thin BitTorrent tracker",
+  "version": "0.1",
+  "type": "web",
+  "launch_path": "/",
+  "developer": {
+    "name": "Kload",
+    "url": "http://yunohost.org"
+  },
+  "yunohost": {
+    "uid": "bitstorm",
+    "script_path": "/scripts",
+    "multi_instance": "true",
+    "webapp": {
+      "language": "php",
+      "db": {
+        "has_mysql_db": "true",
+        "mysql_init_script": "/scripts/init.sql"
+      },
+      "access_control": {
+        "can_be_public": "yes",
+        "can_be_protected": "no"
+      }
+    }
+  }
+}
