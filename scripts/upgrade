@@ -2,6 +2,6 @@
 
 sed -i "s/yunouser/$DB_USER/g" $APP_DIR/index.php
 sed -i "s/yunopass/$DB_PWD/g" $APP_DIR/index.php
-sed -i "s/yunobase/$DB_NAME/g" $APP_DIR/index.php
+sed -i "s/yunobase/$DB_USER/g" $APP_DIR/index.php
 
 exit 0
